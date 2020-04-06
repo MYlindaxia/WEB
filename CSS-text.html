@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.p1 {
+			color: blue;
+			direction: rtl;
+			letter-spacing: 2em;
+			< !-- letter-spacing用来设置每个字母的距离 而word-spacing用来设置每个单词的距离(对中文无效) -->
+		}
+
+		.p2 {
+			text-align:center;
+			line-height: 10em;
+			word-spacing: 2em;
+			< !-- 顾名思义line-height行高的意思啦 -->
+		}
+		.p3{
+			text-indent: 2em;
+			text-transform: capitalize;
+			text-decoration: underline;
+			<!-- text-transform用来控制文字的大小写,中文无效
+			值有uppercase,lowercase和capitalize -->
+		}
+		.p4 {
+			white-space: pre-wrap;
+			<!-- white-space用来设置如何处理空白元素的,可能的值有normal,默认空白会被浏览器忽略
+			pre空白会被保留,效果和pre标签一样,nowrap文本不会换行,除非遇到br标签,pre-wrap保留空白符号,仍能正常换行
+			pre-line合并空白符号,但是能正常换行,inherit从父类继承white-space的值 -->
+		}
+		.p5{
+			text-align:center;
+			text-shadow: 5px 5px 5px red;
+			<!-- text-shadow的值去看W3C吧 -->
+		}
+	</style>
+</head>
+
+<body>
+	<p class="p1">This Is P</p>
+	<p class="p2">This Is P Two</p>
+	<p class="p3">This Is P Three</p>
+	<p class="p4"> 			我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果我前后有很多制表符,用来测试while-space的效果 			</p>
+	<p class="p5">用来测试shadow的阴影效果</p>
+</body>
+
+</html>
