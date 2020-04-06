@@ -1,16 +1,39 @@
-<!DOCTYPE>
+<!<!DOCTYPE HTML>
 <html>
 	<head>
-		<meta charset="utf-8"/>
-		<title>CSS-font的属性</title>
+		<meta charset="utf-8">
 		<style>
-			p{
-				
+			.p1{
+				font-family: arial;
+				font-size: 32px;
+/* 				font-size说的是字体大小
+				font-weight说的是字体粗细,粗细和大小不同,而且不要加px,400就和normal一样,700就和border一样,而且貌似最高900 */
+			}
+			.p2{
+				font-weight: 700;
+				font-family: "楷体";
+				/* font-famaily用于设置字体样式 */
+			}
+			.p3{
+				font-style: italic;
+/* 				font-style用来设置字体风格,主要有斜体italic和normal,主要记住这两个就可以了 */
+				font-variant:small-caps;
+/* 				font-variant只需要记住他是用来定义小型大写字母就可以了,它会将所有小写字母变成大写,不过相对其他本来就是
+				大写字母来说要小点 */
+			}
+			.p4{
+				font:small-caps italic 700 2em/100px "微软雅黑";
+/* 				font的作用就是用来申明所有属性,不用写这么多行,懒人必备!
+				可以按顺序font-style,font-variant,font-weight,font-size/line-height font-family
+				经过我的测试,貌似可以不按顺序来,不过能记住最好,而且font-size/line-height这两个必须记住
+				他两按顺序 */
 			}
 		</style>
 	</head>
 	<body>
-		<p>This is P</p>
-		<p>这是一个P</p>
+		<p class="p1">This Is P</p>
+		<p class="p2">This is p Two</p>
+		<p class="p3">This is p3</p>
+		<p class="p4">This Is Font</p>
 	</body>
 </html>
