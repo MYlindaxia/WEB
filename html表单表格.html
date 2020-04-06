@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button autofocus>这是一个按钮</button>
+    <button disabled>这是一个被禁用的按钮</button>
+    <form action="/example/html5/demo_form.asp" method="get" id="nameform">
+        姓：<input type="text" name="lname" /><br />
+        名：<input type="text" name="fname" /><br />
+    </form>
+    <p>下面的按钮位于 form 元素之外，但仍是表单的一部分。</p>
+    <button type="submit" form="nameform" value="Submit">提交</button>
+    <form action="demo_form.asp" method="get">
+        First name: <input type="text" name="fname" />
+        Last name: <input type="text" name="lname" />
+        <button type="submit">提交</button><br />
+        <button type="submit" formaction="demo_admin.asp">以管理员身份提交</button>
+    </form>
+    <!-- button标签用来定义一个按钮,它支持的属性有autofocus(当页面加载时,自动获取焦点,值有autofocus),disabled(禁用该按钮),from(规定按钮属于一个或多个表单),name(规定按钮的名字),type(规定按钮的类型,它支持的值有1,submit[提交],botton[按钮],reset[重置]),value(定义按钮的初始值)
+    formaction(覆盖form中的actin元素,注意!该属性与type='submit'配合使用),formencype(覆盖from中的enctype属性注意!该属性与type='submit'配合使用)
+    frommethod(覆盖from中的method属性,注意!该属性与type='submit'配合使用,它有两个值[get],[post]),formnovalidate(覆盖from元素中的novalidate,注意!该属性与type='submit'配合使用)
+    fromtarget(覆盖from元素的target属性) -->
+</body>
+
+</html>

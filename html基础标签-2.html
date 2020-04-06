@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='#' rel='stylesheet' type='text/css'>
+    <!-- link的属性有1,href(链接文档的位置),2,hreflang(规定文档的语言)3,media(规定将链接文档显示在什么设备上)4,rel(规定当前文档与被链接文档之间的关系)5,type(规定链接文档的html类型)
+    rel拥有的值有:1,alternate(规定文档的替代版本)2,stylesheet(文档的外部样式表),3start(集合中的第一个文档)4,next(集合中的下一个文档)5,prev(集合中的上一个文档)
+    6,contents(文档的目录)7,index(文档的索引).......
+    链接在这里:https://www.w3school.com.cn/tags/att_link_rel.asp -->
+</head>
+
+<body>
+    <img src='https://fanyi-cdn.cdn.bcebos.com/static/translation/img/header/logo_40c4f13.svg' width="100px"
+        height="100px" alt='百度翻译' title='百度翻译'>
+    <!-- 在网站中插入图片,注意!从技术上讲,img不会插入图片,而是从网络上链接图片,img标签创建的是图片占用的空间
+    img必备两个属性:src属性和alt属性
+    alt属性定义了图片无法显示时出现的值 src定义了图片的地址 它有align(不推荐),border(不推荐,定义图像周围边框),height(定义图像高度),hspace(不推荐使用,定义图片左侧和右侧空白)
+    ismap(定义图片为服务器图像映射),usemap(定义图像为客户机端图像映射),vspace(不推荐使用,定义顶端和底部的空白),width(定义图片宽度)
+    img可以使用所有全局属性和事件属性 -->
+    <!-- ############################################################## -->
+    <!-- 下面这个例子讲解图片映射,所用到的标签有area:定义图像中映射的区域,area总是嵌套在map标签中 map:定义一个客户端图像映射
+    注意!<img>中的usemap属性与map中的name属性相关联,创建图像与映射之间的关系
+    area可选的属性有:coords(定义可点击的坐标值),href(定义此区域的URL),nohref(从图像映射中排出一个区域),shape(定义区域的形状),target(在何处打开url)
+    shape拥有的值有:default(规定全部区域),rect(定义矩形区域),circ(定义圆形),poly(定义多边形区域) -->
+    <p>请点击图像上的星球,将他们放大!</p>
+    <img src='博客素材/1.jpg' usemap="#t1">
+    <map name='t1' id='t1'>
+        <area shape='circ' coords='180,139,14' href='博客素材/2.gif' target="_blank">
+        <area shape='circ' coords='129,161,10' href='博客素材/3.gif' target="_blank">
+        <area shape='rect' coords='0,0,110,260' href='博客素材/4.gif' target="_blank">
+    </map>
+    <p>注释:img中的usemap属性使用了map中的name或者id(根据浏览器决定),所以我们同时加入了id和name</p>
+    <!-- ##############################################################
+    图片这还没学完,还有picture,figure,figcaption,这都是html5新加的 -->
+    <!-- ##############################################################
+    链接有两个标签标示1:link(指定外部资源,常用的途径是指定层叠样式表) 2:a(用于定义超链接,可以让用户从一个网页跳到别的网页中去 它的最常用属性就是href) -->
+    <a href='http://www.baidu.com'>百度一下,你就知道</a>
+    <!-- a的属性有download(规定被下载的超链接目标),href(规定链接指向的目标),hreflang(规定链接文档语言),media(规定是为什么设备准备的),rel(规定当前文档与被链接文档的关系),target(规定在何处打开文档)
+    a标签支持所有的全局属性和事件属性 -->
+    <!-- ##############################################################
+    下面是列表的知识,列表有这几个标签1,ol(定义有序列表)2,ul(定义无序列表)3,li(定义列表中的项目)
+    ol有这几个属性:1,reversed(规定顺序为降序)2,start(规定有序列表的起始位置)3,type(规定列表使用的标记类型)
+    type拥有的值有1,1(默认值,桉数字排序1,2,3,4,5)2,a(按字母顺序排序,小写a,b,c,d,e)3,A(桉大写字母排序)4,i(罗马字符小写)5,I(罗马字符大写) -->
+    <ol start=100 type='I'>
+        <caption>这是一个有序列表</caption>
+        <li>这是第一</li>
+        <li>这是第二</li>
+        <li>这是第三</li>
+        <li>这是第四</li>
+        <li>这是第五</li>
+    </ol>
+    <ul>
+        <caption>这是一个无序列表</caption>
+        <li>这是第六个</li>
+        <li>这是第七个</li>
+        <li>这是第八个</li>
+        <li>这是第九个</li>
+        <li>这是第十个</li>
+    </ul>
+    <!-- ##############################################################
+    下面是关于多媒体这方面的知识,不过我并没有去学习track(在视频中插入字幕),因为直接在视频中插入字幕不香嘛?
+    1,aodio(定义声音,音乐)2,source(为picture,audio,video元素指定多个媒体资源)3,video(定义视频) -->
+    <audio controls loop>
+        <source src='博客素材/周铁男 - 三国杀.mp3'>
+        您的浏览器不支持audio元素
+    </audio><br>
+    <!-- audio有这几个属性:autoplay(自动播放),controls(显示用户控件),loop(循环播放),muted(规定视频输出应该静音),preload(音频在页面加载时加载) src(指定URL)
+    preload有这几个值:1,auto(当页面加载后载入整个音频)2,meta(只加载音频的元元素)3,none(在用户点击开始播放前不会加载音频) -->
+    <video controls width=500px poster='博客素材/1.jpg'>
+        <source src='博客素材/1.mp4'>
+    </video>
+    <!-- video有这几个属性:autoplay,control,height,loop,muted,poster(指定视频在下载时显示的图像),src,widthpreload -->
+</body>
+<!-- ##############################################################
+后面的绘图svg,canvas和时间time我都没看了,以后要看看! -->
+
+</html>

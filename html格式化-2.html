@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <article>
+        <h1>这是文章的标题</h1>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus architecto cumque debitis ea explicabo
+            facere fugit hic iusto nihil, nulla officia officiis omnis placeat quae quis repudiandae similique sunt
+            voluptatibus?
+        </p>
+    </article>
+    <!-- article用来定义文章,支持所有全局属性和事件属性 -->
+    <header>
+        <h1>这是由header嵌套的标记</h1>
+    </header>
+    <!-- <header> 标签用于定义文档的页眉（介绍信息）。 -->
+    <main>
+        <h1>这是由main定义的标记</h1>
+        <ul>
+            <li><data value="21053">《零基础入门学习Scratch》</data></li>
+            <li><data value="21054">《零基础入门学习Python》</data></li>
+            <li><data value="21055">《零基础入门学习Web开发》</data></li>
+            <!-- <data> 标签将一个指定内容和机器可读的翻译联系在一起。
+                但如果内容是与 time 或者 date 相关的，一定要使用 <time>。 -->
+        </ul>
+    </main>
+    <!-- <main> 标签用于定义文档<body>或应用的主体部分
+        主体部分由与文档直接相关，或者扩展于文档的中心主题、应用的主要功能部分的内容组成。
+
+这部分内容在文档中应当是独一无二的，不包含任何在一系列文档中重复的内容，比如侧边栏(aside)，导航栏链接(nav)，版权信息(footer)，网站logo(header)，搜索框（除非搜索框作为文档的主要功能）。 -->
+    <nav>这是一个nav导航栏</nav>
+    <!-- <nav> 标签用于定义页面主导航功能。 -->
+    <aside>
+        <h2>这是由aside嵌套的标记</h2>
+
+    </aside>
+    <!-- <aside> 标签定义侧边栏，通常是网页的说明、提示、引用、附加注释、相关链接、广告等内容。 -->
+    <footer>
+        <h3>这是由footer嵌套的标记</h3>
+        <details>
+            <summary>《零基础入门学习Python》</summary>
+            <p>配有同名书籍。</p>
+            <p>配有视频教程</p>
+        </details>
+
+        <details open>
+            <p>配有同名书籍。</p>
+            <p>配有视频教程</p>
+        </details>
+
+        <details>
+            <p>配有同名书籍。</p>
+            <p>配有视频教程</p>
+        </details>
+        <details>
+            <!-- 标签用于定义用户可见的或者隐藏的需求的补充细节。
+            details 元素的内容对用户是不可见的，除非设置了 open 属性。
+
+            与 <summary> 标签配合使用可以为 details 定义标题。标题是可见的，用户点击标题时，会显示出 details。 -->
+            <!-- ############################################################## -->
+            <!-- <summary> 标签定义 <details> 元素的标题
+            summary 和 details 元素配合使用可以为 details 定义标题。标题是可见的，用户点击标题时，会显示出 details。 -->
+    </footer><br>
+    <!-- <footer> 标签定义文档或节的页脚。 -->
+    <table border="1">
+        <tr>
+            <th>一月 <dialog open>这是打开的对话窗口</dialog>
+            </th>
+            <th>二月</th>
+            <th>三月</th>
+        </tr>
+        <tr>
+            <td>31</td>
+            <td>28</td>
+            <td>31</td>
+        </tr>
+    </table>
+    <!-- dialog标签的作用是定义一个对话框,它有一个属性open,规定dialog元素是有效的,用户可以进行交互 -->
+    <div>这是一个div块级元素</div>
+    <!-- <div> 标签定义 HTML 文档中的一个分隔区块或者一个区域部分。
+    <div> 是一个块级元素。这意味着它的内容自动地开始一个新行。实际上，换行是 <div> 固有的唯一格式表现。可以通过 <div> 的 class 或 id 应用额外的样式。 -->
+    <!-- ############################################################## -->
+    <section>
+        <h1>鱼C工作室</h1>
+        <p>一起:</p>
+    </section>
+    <p>让编程改变世界</p>
+    <section>
+        <h1>By-鱼C</h1>
+    </section>
+    <!-- <section> 标签用于定义定义文档中的节。 -->
+    <p><span>提示：</span>我爱鱼C</p>
+    <!-- <span> 标签用于组合文档中的行内元素。 -->
+    <!-- !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    后面还有程序设置一系列标签,但是我没有去看
+    但是我加入了字符 -->
+    <!-- ############################################################## -->
+    版权符号:&copy;
+    <br>
+    小于符号:&lt;<br>
+    大于符号:&gt;<br>
+    空格符号:&nbsp;&nbsp;&nbsp;&nbsp;
+    输出一串文字验证空格起作用了
+</body>
+
+</html>

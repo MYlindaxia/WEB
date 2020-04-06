@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- 1.!DOCTYPE html是一个申明,表示这是最新html5格式,浏览器应该用最新格式来解析 -->
+<!-- 2.--..--是一种注释的格式,浏览器会直接跳过注释 -->
+<html lang="en">
+
+<head>
+    <!-- head用于定义文档头部,它是所有头部元素的容器,它描述了文档的各种属性和信息,包括标题
+    下面这些标签可以用在头部:base   link    meta    script    style     title
+    head标签支持所有全局属性 -->
+    <meta charset="UTF-8">
+    <meta http-equiv="charset" content="UTF-8">
+    <!-- meta元素用于描述网页内容,关键词,作者和其他信息 注意!meta元素在head内部
+    content属性必须和name 或 http-equiv 属性共存亡!!!
+    它的属性有charset:用于指定html文档的编码,content:指定与 http-equiv 或 name 属性相关的值。
+    http-equiv:content-type：(另一种声明 HTML 文档作用字符编码的方法（
+    <meta http-equiv="content-type" content="text/html charset=UTF-8">）。
+    default-style：指定页面优先使用的样式表。refresh：以秒为单位指定一个时间间隔，在此时间过去之后将从服务器重新载入当前页面。也可以另行指定一个 URL 让浏览器载入。)
+    name:(application-name：当前页所属 Web 应用系统的名称。
+    author：当前页的作者名。
+    description：当前页的内容描述。
+    generator：用来生成 HTML 的软件名称。
+    keywords：当前页的关键词。
+    viewport：网页尺寸自适应。)
+    meta标签支持html中全局属性
+    我感觉这里w3c写的比较好:https://www.w3school.com.cn/tags/tag_meta.asp#meta_prop_http-equiv -->
+    <!-- 这里有一篇详细讲解了http-equiv的https://blog.csdn.net/u011200604/article/details/51893323 -->
+    <meta http-equiv="refresh" content="5;http://www.baidu.com">
+    <base target='_blank'>
+    <!-- <base target='_top'> -->
+    <!-- <base target='_parent'> -->
+
+    <!-- 3.base定义浏览器的相对解析标准,这里设置为打开网页都用新窗口打开
+    base 有两个属性:1,href指定浏览器的基准URL 2,target指定在何处打开超链接
+    target有五个属性1,_blank:在新窗口中打开 2,_self在当前窗口打开(默认情况) 3,_top:在整个窗口中打开 4,_parent在当前
+    窗口中的父窗口中打开,如果不存在父窗口,则效果与_self相同 5,framename:在指定框架中打开 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- 定义网页标题,属性有dir,lang(规定元素中内容的语言代码),(xml:lang):规定XHTML中元素的语言代码 -->
+</head>
+<!-- html标签用于告诉浏览器自身是一个html文档.它有两个属性:1,manifest(是html5新属性):定义一个 URL，在这个 URL 上描述了文档的缓存信息。
+2,xmlns:定义 XML namespace 属性。
+这两个我都没有去看!!! -->
+
+<body>
+    <!-- body标签定义网页的主体,包含文档的所有内容.它支持html中所有的全局属性和事件属性 -->
+    <a href='http://www.baidu.com'>百度一下</a><br>
+    <span>用来测试换行符</span><br>
+    <!-- br标签是插入一个简单的换行符,br标签支持html中所有全局属性和事件属性
+    在XHTML中br要有结束符号/所以可以写成这样<br /> -->
+    <span>看看换行没有</span>
+    <p dir='ltr'>测试dir属性是不是从left to right</p>
+    <!-- 定义一个段落,它是块元素,它有属性align,不过不推荐使用它,它支持所有全局属性 -->
+    <p dir='rtl'>测试dir属性是不是从right to left</p>
+    <!-- dir属性规定了文本方向,有3个属性值 1,auto:自动   2,ltr:左到右    3,rtl:右到左
+    在w3school中不推荐这种方式,具体原因可以去看官方文档 -->
+    <h1 align='right'>这是一级标题</h1>
+    <h2 align='justify'>这是二级标题</h2>
+    <h3 align='center'>这是三级标题</h3>
+    <!-- <h1>-<h6>可以用来定义标题其中h1是最大标题,h2是最小标题,h1-h6有重大意义,请不要用标签来改变文字大小,因为会把爬虫搞蒙
+            可选属性align,它有五个值:1,left,左对齐 2,right,右对齐 3,center,居中 4,justify,对内容进行伸缩.
+            但是不要经常使用,我们并不推荐在h1-h6中使用align属性 -->
+    <p style='text-align:right'>测试style标签</p>
+    <!-- style标签用于定义html文档样式它有3个属性1,media:指定样式媒体 2,scoped:指定样式作用范围(如果使用该元素,则样式仅仅应用到style元素的父元素和子元素,html5新加的,现在只有火狐支持!) 3,type:指定样式类型
+    media属性太多了就不看了,链接就挂在这里,而且我感觉真的没啥用
+    type现在就一个值,就是text/css
+    1:https://man.ilovefishc.com/pageHTML5/media.html
+    2:https://www.w3school.com.cn/tags/tag_style.asp -->
+</body>
+
+</html>
