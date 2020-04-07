@@ -1,2 +1,2 @@
-# WEB
-html,css,js之类的文件保存地
+#WEB
+我已经在vscode中加入git插件,此版本用来测试能否推送成功
