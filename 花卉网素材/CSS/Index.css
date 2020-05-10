@@ -1,0 +1,518 @@
+/* 将所有属性的margin和padding值设为0.权重最低 */
+/* 开始设置静态css */
+*{
+   margin: 0;
+   padding: 0;
+   color:#848484;
+}
+li:hover{
+    color:#c0c0c0;
+}
+/* 设置整个html文档 高度为1005*/
+body{
+    width: 1007px;
+    height: 1005px;
+    margin: 0 auto;
+}
+/* 设置头部中的标题标签 */
+header>h1{
+    height: 52px;
+}
+/* 设置头部的图片 */
+header>img{
+    vertical-align: middle;
+}
+/* 设置头部的导航栏 */
+header>nav{
+    width: 723px;
+    height: 37px;
+    background: url(../img/menu.jpg);
+    float: left;
+}
+/* 设置头部的导航栏中的ul标签 */
+header>nav>ul{
+    list-style: none;
+    height: 37px;
+}
+/* 设置头部的导航栏中的ul中的li标签 */
+header>nav>ul>li{
+    display: inline-block;
+    padding-top: 7px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
+}
+header>nav>ul>li:first-child{
+    margin-left: 30px;
+}
+/* 设置头部中的导航栏的右边 */
+header>nav:last-child{
+    width: 284px;
+    height: 37px;
+    background: url(../img/menuright.jpg);
+    float: left;
+}
+/* 设置html文档的主体 */
+main{
+    width: inherit;
+    height: 1030px;
+    background-color: #f8f2da;
+}
+/* 设置main标签里面的七月昆明图片 */
+main>div:first-child{
+    margin-top: 37px;
+    width: 1006px;
+    height: 247px;
+    background: url(../img/pic.jpg);
+}
+/* 设置main标签中的主体内容 */
+main>div:last-child{
+    width: 870px;
+    height: 810px;
+    background-color: #f8f2da;
+    margin-left: 65px;
+}
+/* 设置实时资讯div */
+main>div:last-child>div:first-child{
+    height:512px;
+    width: 320px;
+    border:1px solid green;
+    float: left;
+}
+/* 设置标题div */
+main>div:last-child>div:first-child>div:first-child{
+    background: url(../img/title.jpg) repeat-x;
+    height: 24px;
+    width: inherit;
+}
+/* 设置标题2div */
+main>div:last-child>div:first-child>div:nth-of-type(2){
+    height: 27px;
+    width: 320px;
+    background: url(../img/title2.jpg) repeat-x;
+    float: left;
+}
+/* 设置无序列表 */
+main>div:last-child>div:first-child>div:nth-of-type(3){
+    height: 147px;
+    width: inherit;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+/* 设置无序列表中的ul标签 */
+main>div:last-child>div:first-child>div:nth-of-type(3)>ul{
+    list-style: none;
+    font-size: 12px;
+    padding-left: 5px;
+}
+/* 设置无序列表中的li标签 */
+main>div:last-child>div:first-child>div:nth-of-type(3)>ul>li{
+    display: inline-block;
+    margin: 2px 0;
+}
+/* 设置无序列表中的偶数li标签 */
+main>div:last-child>div:first-child>div:nth-of-type(3)>ul>li:nth-child(even){
+    margin: 2px 0 2px 21px;
+}
+/* 设置国内花迅标题div */
+main>div:last-child>div:first-child>div:nth-of-type(4){
+    height: 27px;
+    width: 320px;
+    background: url(../img/title2.jpg) repeat-x;
+    float: left;
+}
+/* 设置无序列表中的ul标签 */
+main>div:last-child>div:first-child>div:nth-of-type(5)>ul{
+    list-style: none;
+    font-size: 12px;
+    width: 188px;
+    float: left;
+    padding-left: 5px;
+}
+/* 设置无序列表中的li标签 */
+main>div:last-child>div:first-child>div:nth-of-type(5)>ul>li{
+    display: inline-block;
+    margin: 2px 0px;
+}
+/* 设置无序列表div */
+main>div:last-child>div:first-child>div:nth-of-type(5){
+    height: 310px;
+    width: inherit;
+    background-color: #ffffff;
+    margin-top: 15px;
+}
+/* 设置004图片 */
+img[src|='../img/004.jpg' i]{
+    float: right;
+    width: 122px;
+    padding-right: 2px;
+}
+/* 设置005图片 */
+img[src|="../img/005.jpg" i]{
+    float: right;
+    width: 122px;
+    padding-right: 2px;
+    margin-top: 6px;
+}
+
+/* 0,0,2,3权重 */
+main>div:last-child>div:first-child>div>cite{
+    color:white;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+/* 0,0,3,3权重 */
+main>div:last-child>div:first-child>div:nth-child(5)>img+cite{
+    float: right;
+    width: 122px;
+    height: 20px;
+    font-size: 12px;
+    color:#9caf69;
+    font-style: normal;
+    padding-right: 2px;
+    padding-left: 0;
+}
+main>div:last-child>div:nth-of-type(5)>div:nth-of-type(4)>div:first-child{
+background: url(../img/title4.jpg);
+height: 20px;
+width: 260px;
+display: inline-block;
+}
+/* 用来设置小盒子里面的标题 */
+span{
+    margin-left: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    color:#96a65d;
+    display: inline-block;
+    margin-top: 6px;
+}
+main>div:last-child>div:nth-child(2){
+    width: 531px;
+    height: 280px;
+    background-color: #ffffff;;
+    float: left;
+    margin-left: 15px;
+    border:1px solid green;
+}
+/* 设置标题背景图片 */
+main>div:last-child>div:nth-child(2)>:first-child{
+    background: url(../img/title.jpg);
+    height: 24px;
+}
+main>div:last-child>div:nth-child(2)>div>cite{
+    color:white;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+
+}
+main>div:last-child>div:nth-child(2)>:nth-child(2)>ul{
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    padding-left: 5px;
+    width: 525px;
+    margin-top: 10px;
+    padding-left: 1px;
+}
+main>div:last-child>div:nth-child(2)>:nth-child(2)>ul>li{
+    width: 425px;
+    display: inline-block;
+    border-bottom: 1px dotted green;
+    padding:2px 0px;
+    font-size: 12px;
+}
+time{
+    width: 100px;
+    float: right;
+    padding: 2px 0;
+    border-bottom: 1px dotted green;
+    font-size: 12px;
+}
+main>div:last-child>div:nth-child(2)>:nth-child(2)>ul>li:nth-last-of-type(1){
+    width: 425px;
+    display: inline-block;
+    border-bottom:0px;
+}
+ul>time:last-child{
+    border:0px;
+}
+main>div:last-child>div:nth-child(3){
+    width: 531px;
+    height: 220px;
+    margin-top: 10px;
+    background-color: #ffffff;;
+    float: left;
+    margin-left: 15px;
+    background-color:#fff;
+    border:1px solid green;
+}
+/* 设置标题背景图片 */
+main>div:last-child>div:nth-child(3)>div:first-child{
+    background: url(../img/title.jpg);
+    height: 24px;
+}
+main>div:last-child>div:nth-child(3)>div>cite{
+    color:white;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+main>div:last-child>div:nth-child(3)>:nth-child(2)>ul{
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    padding-left: 5px;
+    width: 525px;
+    margin-top: 10px;
+}
+main>div:last-child>div:nth-child(3)>:nth-child(2)>ul>li{
+    width: 425px;
+    display: inline-block;
+    border-bottom: 1px dotted green;
+    padding:2px 0px;
+    font-size: 12px;
+}
+main>div:last-child>div:nth-child(3)>:nth-child(2)>ul>li:nth-last-of-type(1){
+    width: 425px;
+    display: inline-block;
+    border-bottom:0px;
+}
+main>div:last-child>div:nth-child(4){
+    width: 320px;
+    height: 260px;
+    margin-top: 9px;
+    background-color: #ffffff;;
+    float: left;
+    background-color:#fff;
+    border:1px solid green;
+}
+/* 设置标题背景图片 */
+main>div:last-child>div:nth-child(4)>div:first-child{
+    background: url(../img/title.jpg);
+    height: 24px;
+    margin-top: 1px;
+}
+main>div:last-child>div:nth-child(4)>div>cite{
+    color:white;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+main>div:last-child>div:nth-child(4)>img{
+    margin: 10px 0 0 15px;
+}
+main>div:last-child>div:nth-child(4)>:nth-child(3)>ul{
+    list-style: none;
+    font-size: 12px;
+    float: left;
+    padding-left: 5px;
+    width: 525px;
+    margin-top: 10px;
+}
+main>div:last-child>div:nth-child(4)>:nth-child(3)>ul>li{
+    padding:2px 0px;
+    font-size: 12px;
+    margin: 2px 0 0 15px;
+    width: 300px;
+}
+main>div:last-child>div:nth-child(5){
+    width: 531px;
+    height: 260px;
+    margin-top: 9px;
+    background-color: #ffffff;;
+    float: left;
+    background-color:#fff;
+    border:1px solid green;
+    margin-left: 15px;
+}
+/* 设置标题背景图片 */
+main>div:last-child>div:nth-child(5)>div:first-child{
+    background: url(../img/title3.jpg);
+    height: 24px;
+    width: 531px;
+    margin-top: 1px;
+    display: inline-block;
+    float: left;
+}
+main>div:last-child>div:nth-child(5)>div>cite{
+    color:white;
+    font-style: normal;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 15px;
+}
+main>div:last-child>div:nth-child(5)>ul{
+    list-style: none;
+    font-size: 12px;
+    padding-left: 5px;
+    width: 525px;
+    margin-top: 10px;
+
+}
+main>div:last-child>div:nth-child(5)>ul>li:nth-child(even){
+    margin:-15px 10px;
+
+}
+main>div:last-child>div:nth-child(5)>ul>li{
+    float: right;
+    margin-top: -15px;
+    margin-right: 24px;
+    color:#aae62f;
+    font-weight: bold;
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(2){
+    width: 260px;
+    height: 260px;
+    float: left;
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(2)>div{
+    width: 260px;
+    background: url(../img/title2.jpg);
+    height: 22px;
+    
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(2)>ul{
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 25px;
+    list-style: none;
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(2)>ul>li{
+    margin:6px 0;
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(3){
+    background: url(../img/shuxian.jpg) repeat-y;
+    height: 235px;
+    width: 2px;
+    float: left;
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(4)>ul{
+    font-size: 12px;
+    padding-left: 5px;
+    margin-top: 25px;
+    list-style: none;
+}
+main>div:last-child>div:nth-child(5)>div:nth-of-type(4)>ul>li{
+    margin:6px 0;
+}
+/* 设置背景图片div */
+body>div{
+    width: 1007px;
+    height: 26px;
+    background: url(../img/buttomtop.jpg);
+}
+footer{
+    width: 1007px;
+    height: 179px;
+    background: url(../img/buttom.jpg);
+}
+footer>div>ul{
+    list-style: none;
+    margin-left: 50px;
+}
+/* 0,0,0,4权重 */
+footer>div>ul>li{
+    width: 101px;
+    height: 68px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-left: 15px;
+    border:3px solid white;
+}
+footer>div>ul:last-child{
+    list-style: none;
+    margin-left: 50px;
+}
+footer>div>ul:last-child>li{
+    width: 101px;
+    height: 20px;
+    margin-top: 10px;
+    text-align: center;
+    border:0;
+    margin-left: 20px;
+    font-size: 12px;
+    color:#6c6c6c;
+}
+footer>div:nth-of-type(2){
+    background: url(../img/down.jpg)repeat-y;
+    height: 13px;
+    width: 900px;
+    margin-left: 63px;
+}
+
+footer>div:last-of-type{
+    margin-top: 2px;
+    height: 20px;
+    font-size: 12px;
+    margin-left: 410px;
+    color:#6c6c6c;
+}
+/* 静态css结束 */
+/* 开始设置动态效果 */
+footer>div>ul:last-child>li:hover{
+    color:#c0c0c0;
+}
+main>div:last-child>div:nth-child(5)>ul>li:nth-child(odd):hover{
+    color:#ff6a6a;
+}
+header>nav>ul>li:hover{
+    color:black;
+    background-color: #f8f2da;
+
+}
+header>nav>ul>li:nth-child(3)>ul>li,header>nav>ul>li:nth-child(4)>ul>li,header>nav>ul>li:nth-child(5)>ul>li{
+    list-style: none;
+    display: none;
+    
+}
+header>nav>ul>li:hover:nth-child(3):hover >ul{
+    margin-top: 9px;
+   
+}
+header>nav>ul>li:hover:nth-child(3):hover >ul>li{
+    display: block;
+    color:red;
+    height: 30px;
+    background-color: #f5edcd;
+    text-align: center;
+    padding-top: 10px;
+}
+header>nav>ul>li:hover:nth-child(4):hover >ul{
+    margin-top: 9px;
+}
+header>nav>ul>li:hover:nth-child(4):hover >ul>li{
+    display: block;
+    color:red;
+    height: 30px;
+    background-color: #f5edcd;
+    text-align: center;
+    padding-top: 10px;
+}
+header>nav>ul>li:hover:nth-child(5):hover >ul{
+    margin-top: 9px;
+}
+header>nav>ul>li:hover:nth-child(5):hover >ul>li{
+    display: block;
+    color:red;
+    height: 30px;
+    background-color: #f5edcd;
+    text-align: center;
+    padding-top: 10px;
+}
+header>nav>ul>li{
+    float: left;
+    position: relative;
+}
+header>nav>ul>li:hover:nth-child(3)>ul>li:hover,header>nav>ul>li:hover:nth-child(4)>ul>li:hover,header>nav>ul>li:hover:nth-child(5)>ul>li:hover{
+    background-color: #aae62f;
+    text-decoration: underline;
+    color:white;
+}
+/* 动态效果结束 */
