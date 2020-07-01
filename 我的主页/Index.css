@@ -1,4 +1,6 @@
-*{
-    margin:0px;
-    padding:0px;
+p {
+  direction: rtl;
+}
+span {
+  direction: rtl;
 }
