@@ -1,0 +1,8 @@
+*{margin:0;padding: 0;list-style: none;text-decoration: none;}
+#nav{width: 500px;height: 40px;background: #ccc;margin: 0 auto;}
+ul{background: #aaa}
+ul li{float:left; display:block; height: 40px; line-height: 40px; padding: 0 20px; position: relative;}
+ul li:hover{background: #cea;}
+ul li ul li{float: none;}
+ul li ul{position: absolute;top:40px;left: 0; display:none;}
+ul li ul li:hover{background: red;}
